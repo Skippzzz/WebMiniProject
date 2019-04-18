@@ -1,0 +1,98 @@
+/*Contains css for login and register*/
+#login_form h1 {
+  text-align: center;
+}
+#login_form {
+  width: 37%;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  border: 1px solid #918274;
+  border-radius: 5px;
+  background: white;
+}
+#login_form input {
+  width: 80%;
+  height: 35px;
+  margin: 5px 10%;
+  font-size: 1.1em;
+  padding: 4px;
+  font-size: .9em;
+}
+#login_btn {
+  height: 35px;
+  width: 80%;
+  margin: 5px 10%;
+  color: white;
+  background: #3B5998;
+  border: none;
+  border-radius: 5px;
+}
+#register_form h1 {
+  text-align: center;
+}
+#register_form {
+  width: 37%;
+  margin: 100px auto;
+  padding-bottom: 30px;
+  border: 1px solid #918274;
+  border-radius: 5px;
+  background: white;
+}
+#register_form input {
+  width: 80%;
+  height: 35px;
+  margin: 5px 10%;
+  font-size: 1.1em;
+  padding: 4px;
+  font-size: .9em;
+}
+#reg_btn {
+  height: 35px;
+  width: 80%;
+  margin: 5px 10%;
+  color: white;
+  background: #3B5998;
+  border: none;
+  border-radius: 5px;
+}
+.form_error span {
+  width: 80%;
+  height: 35px;
+  margin: 3px 10%;
+  font-size: 1.1em;
+  color: #D83D5A;
+}
+.form_error input {
+  border: 1px solid #D83D5A;
+}
+/*Contains css for actual portfolio*/
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', arial, sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+header {
+  display: block;
+  height: 140px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 30px;
+}
+nav {
+  font-family: oswald, arial, sans-serif;
+  float: right;
+  width: 600px;
+  padding-top: 30px;
+  font-size: 1.4em;
+  text-align: right;
+  text-transform: uppercase;
+}
+nav a {
+  padding-left: 30px;
+}
+nav a:hover, a.current {
+  color: #d71a00;
+}
+a {text-decoration: none; color: #000;
+}
