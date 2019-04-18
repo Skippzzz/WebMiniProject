@@ -17,6 +17,9 @@
     <input type="password"  placeholder="Password" name="password">
   </div>
   <div>
+    <input type="password"  placeholder="Password" name="confim_password">
+  </div>
+  <div>
       <button type="submit" name="register" id="login_btn">Register</button>
   </div>
 </form>

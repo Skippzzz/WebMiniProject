@@ -10,6 +10,7 @@ $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
   if (isset($_POST['register'])) {
     $username = mysqli_real_escape_string($db,$_POST['username']);
     $password = mysqli_real_escape_string($db,$_POST['password']);
+    $confirm_password = mysqli_real_escape_string($db,$_POST['confim_password']);
 
   	$sql_u = "SELECT * FROM user WHERE username='$username'";
     $sql_p = "SELECT * FROM user WHERE password='$password'";
@@ -21,9 +22,12 @@ $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
   	if ($user) {
        if ($user['username'] === $username) {
          $name_error = "Sorry... username already taken";
-              // echo "not welcome";
       }
-  	}else{
+  	}
+    elseif ($password !== $confirm_password) {
+       $name_error = "Password does not match";
+    }
+    else{
            $query = "INSERT INTO user (username, password)
       	    	  VALUES ('$username', '$password')";
            $results = mysqli_query($db, $query);
