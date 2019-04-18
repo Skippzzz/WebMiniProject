@@ -28,7 +28,11 @@ $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
       	    	  VALUES ('$username', '$password')";
            $results = mysqli_query($db, $query);
            // echo "welcome";
+<<<<<<< HEAD
            header("Location: http://localhost/webProjects/PhpLogin/Portfolio.html");
+=======
+           header("Location: http://localhost/webProjects/PhpLogin/WebMiniProject/Portfolio.html");
+>>>>>>> master
            exit();
   	}
   }
