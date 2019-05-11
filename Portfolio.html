@@ -4,21 +4,45 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <header>
-  <nav>
-    <a href="Portfolio.html" class="current"> Portfolio</a>
-    <a href="Contact.html"> Contact</a>
-    <a href="About.html"> About </a>
-  </nav>
-</header>
-    <section id="content">
-      <div id="container">
-        <h1>Hi 3</h1>
-      </div>
+    <body>
+      <header>
+        <div class="container">
+          <img src="3.png" width="110" height="90" alt="logo" class="logo">
+          <h1 id="namePortfolio">Bob Bobsen</h1>
+            <nav>
+              <ul>
+                <li><a href="Portfolio.html" class="current"> Portfolio</a></li>
+                <li><a href="Contact.html"> Contact</a></li>
+                <li><a href="About.html"> About</a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
 
-    </section>
-    <script src="jquery-3.3.1.js"></script>
-    <script src="Ajax.js"></script>
-  </body>
+
+  <section id="content">
+    <div id="container">
+      <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
+        <div id="div01" class="port-modal">
+          <div class="port-modal-content">
+            <header class="port-container port-teal">
+              <!-- &#10006; is the 'x' mark to close the pop-up :-) - style display is the function to actually close to "nothing" -->
+              <span onclick="document.getElementById('div01').style.display='none'" class="close-button port-display-topright"> &#10006; </span>
+              <h2>header</h2>
+            </header>
+          <div class="port-container">
+            <p>some text</p>
+            <p>some text</p>
+          </div>
+          <footer class="port-container port-teal">
+            <p>footer</p>
+          </footer>
+          </div>
+        </div>
+      </div>
+  </section>
+
+        <script src="jquery-3.3.1.js"></script>
+        <script src="Ajax.js"></script>
+    </body>
 </html>

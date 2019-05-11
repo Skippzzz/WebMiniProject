@@ -65,68 +65,72 @@
 .form_error input {
   border: 1px solid #D83D5A;
 }
+
 /*Contains css for actual portfolio*/
-body {
-  background-color: #fff;
-  color: #666;
-  font-family: 'Open Sans', arial, sans-serif;
-  width: 960px;
-  margin: 0 auto 0 auto;
-}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 header {
   display: block;
   height: 140px;
-  border-bottom: 5px solid #000;
+  border-bottom: 0px solid #000;
   margin-bottom: 30px;
+  background: #30A688;
 }
-nav {
-  font-family: oswald, arial, sans-serif;
+
+body {
+  margin: 0;
+  background: #222;
+  background-color: #71F0CA;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+#namePortfolio {
   float: right;
-  width: 600px;
-  padding-top: 30px;
-  font-size: 1.4em;
-  text-align: right;
-  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+  top: 70px;
+  bottom: 70px;
+  padding-left: 0px;
+  text-align: center;
 }
+
+.logo {
+  float: left;
+  padding: 0px 0;
+  padding-left: 30px;
+}
+
+#container_Txt {
+    padding: 0px;
+    color: #ffffff;
+}
+
+nav {
+  float: right;
+}
+
 nav a {
   padding-left: 30px;
 }
+
 nav a:hover, a.current {
-  color: #d71a00;
-}
-a {text-decoration: none; color: #000;
+  color: #ffffff;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .container {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
-}
-
-header {
-  background: #55d67c;
 }
 
 header::after {
   content: '';
   display: table;
   clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
 }
 
 nav ul {
@@ -139,7 +143,6 @@ nav li {
   display: inline-block;
   margin-left: 80px;
   padding-top: 23px;
-
   position: relative;
 }
 
@@ -151,7 +154,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #ffffff;
 }
 
 nav a::before {
@@ -171,13 +174,73 @@ nav a:hover::before {
   width: 100%;
 }
 
-h1 {
-    padding: 50px;
-    color: #55d67c;
+.open-button{
+  padding: 80px 100px;
+  cursor: pointer;
+  border-style: solid;
+  background: url(3.png);
 }
 
-rect {
-    color: #444;
+.open-button:hover{
+  background-color: #555;
+}
+
+.close-button {
+  position: absolute;
+  padding: 15px 15px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:#009688!important
+  border: none;
+  }
+
+.close-button:hover {
+  background-color: #555;
+}
+
+#container{
+  padding: 250px 860px;
+}
+
+.port-modal-content{
+  margin:auto;background-color: #fff;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:600px
+}
+
+.port-modal{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.4);
+}
+
+.port-display-topright{
+  position:absolute;
+  right:0;top:0;
+}
+
+.port-teal{
+  color:#fff!important;
+  background-color:#009688!important;
+}
+
+/* The lines of code beneath this does not do anything unless we add rects */
+ /* rect {
+    width: 300px;
+    height: 150px;
+    background: #ffffff;
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
@@ -216,7 +279,4 @@ rect p textarea{
     font-size: 16px;
     color: #444;
     text-align: center;
-}
-
-
-
+} */
