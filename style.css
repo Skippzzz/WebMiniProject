@@ -178,7 +178,7 @@ nav a:hover::before {
 }
 
 .open-button:hover{
-  background-color: #555;
+  background-color: rgba(100,100,100,0.5);
 }
 
 .close-button {
