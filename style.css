@@ -81,7 +81,7 @@ body {
   background: #222;
   background-color: #71F0CA;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 #namePortfolio {
@@ -175,7 +175,7 @@ nav a:hover::before {
 }
 
 .open-button{
-  padding: 80px 100px;
+  padding: 80px 125px;
   cursor: pointer;
   border-style: solid;
   background: url(3.png);
@@ -199,10 +199,6 @@ nav a:hover::before {
 
 .close-button:hover {
   background-color: #555;
-}
-
-#container{
-  padding: 250px 860px;
 }
 
 .port-modal-content{
