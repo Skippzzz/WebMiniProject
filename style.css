@@ -85,12 +85,8 @@ body {
 }
 
 #namePortfolio {
-  float: right;
-  position: absolute;
+  float: left;
   color: #ffffff;
-  top: 70px;
-  bottom: 70px;
-  padding-left: 0px;
   text-align: center;
 }
 
