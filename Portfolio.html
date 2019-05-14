@@ -22,43 +22,9 @@
 
   <section id="content">
     <div id="container">
-      <div id="firstProject">
-        <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
-          <div id="div01" class="port-modal">
-            <div class="port-modal-content">
-              <header class="port-container port-teal">
-                <!-- &#10006; is the 'x' mark to close the pop-up :-) - style display is the function to actually close to "nothing" -->
-                <span onclick="document.getElementById('div01').style.display='none'" class="close-button port-display-topright"> &#10006; </span>
-                <h2>header</h2>
-              </header>
-            <div class="port-container">
-              <p>some text</p>
-            </div>
-            <footer class="port-container port-teal">
-              <p>footer</p>
-            </footer>
-            </div>
-          </div>
-        </div>
-        <div id="secondProject">
-          <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
-            <div id="div01" class="port-modal">
-              <div class="port-modal-content">
-                <header class="port-container port-teal">
-                  <!-- &#10006; is the 'x' mark to close the pop-up :-) - style display is the function to actually close to "nothing" -->
-                  <span onclick="document.getElementById('div01').style.display='none'" class="close-button port-display-topright"> &#10006; </span>
-                  <h2>header</h2>
-                </header>
-              <div class="port-container">
-                <p>some text</p>
-              </div>
-              <footer class="port-container port-teal">
-                <p>footer</p>
-              </footer>
-              </div>
-            </div>
-          </div>
-          <div id="thirdProject">
+      <table id="projectTable">
+        <td id="firstProject">
+          <div>
             <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
               <div id="div01" class="port-modal">
                 <div class="port-modal-content">
@@ -76,6 +42,48 @@
                 </div>
               </div>
             </div>
+        </td>
+        <td id="secondProject">
+          <div >
+            <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
+              <div id="div01" class="port-modal">
+                <div class="port-modal-content">
+                  <header class="port-container port-teal">
+                    <!-- &#10006; is the 'x' mark to close the pop-up :-) - style display is the function to actually close to "nothing" -->
+                    <span onclick="document.getElementById('div01').style.display='none'" class="close-button port-display-topright"> &#10006; </span>
+                    <h2>header</h2>
+                  </header>
+                <div class="port-container">
+                  <p>some text</p>
+                </div>
+                <footer class="port-container port-teal">
+                  <p>footer</p>
+                </footer>
+                </div>
+              </div>
+            </div>
+        </td>
+        <td id="thirdProject">
+          <div >
+            <button class="open-button" onclick="document.getElementById('div01').style.display='block'"></button>
+              <div id="div01" class="port-modal">
+                <div class="port-modal-content">
+                  <header class="port-container port-teal">
+                    <!-- &#10006; is the 'x' mark to close the pop-up :-) - style display is the function to actually close to "nothing" -->
+                    <span onclick="document.getElementById('div01').style.display='none'" class="close-button port-display-topright"> &#10006; </span>
+                    <h2>header</h2>
+                  </header>
+                <div class="port-container">
+                  <p>some text</p>
+                </div>
+                <footer class="port-container port-teal">
+                  <p>footer</p>
+                </footer>
+                </div>
+              </div>
+            </div>
+        </td>
+      </table>
       </div>
   </section>
 
