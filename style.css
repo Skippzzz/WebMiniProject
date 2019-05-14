@@ -189,7 +189,7 @@ nav a:hover::before {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color:#009688!important
+  background-color:#009688!important;
   border: none;
   }
 
