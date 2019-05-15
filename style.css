@@ -70,7 +70,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 header {
   display: block;
-  height: 140px;
+  height: 100px;
   border-bottom: 0px solid #000;
   margin-bottom: 30px;
   background: #30A688;
@@ -121,7 +121,7 @@ a {
 
 .container {
 	width: 85%;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 header::after {
@@ -314,6 +314,7 @@ nav a:hover::before {
 }
 
 
+/* Stuff for the about page*/
 
 .column {
   float: left;
@@ -328,6 +329,7 @@ nav a:hover::before {
   clear: both;
 }
 
+/* Contact, placement of text in center*/
 div.column1 {
   text-align: center;
 }
