@@ -314,6 +314,19 @@ nav a:hover::before {
 
 
 
+.column {
+  float: left;
+  width: 28%;
+  padding: 5mm;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 
 
